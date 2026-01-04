@@ -101,6 +101,7 @@ A modern and elegant Flutter e-commerce application for a clothes and fashion st
 
 ### Video
 
+https://github.com/user-attachments/assets/f7218ce7-1ed3-4ce0-b5a2-2065cab42d98
 
 ## 🎨 Design Features
 
