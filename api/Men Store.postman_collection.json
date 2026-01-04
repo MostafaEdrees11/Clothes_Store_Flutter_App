@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "72562e4f-d8cc-4fee-9ae5-af1b4589aede",
+		"name": "Men Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23333560",
+		"_collection_link": "https://bold-star-982325.postman.co/workspace/New-Personal-Workspace~3d60f8eb-d763-47a8-ab2c-86a892ec55b7/collection/23333560-72562e4f-d8cc-4fee-9ae5-af1b4589aede?action=share&source=collection_link&creator=23333560"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}products/categories",
+					"host": [
+						"{{base_url}}products"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}auth/login",
+					"host": [
+						"{{base_url}}auth"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "\"string\"",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "\"string\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home_products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}products",
+					"host": [
+						"{{base_url}}products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}carts",
+					"host": [
+						"{{base_url}}carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"string\",\r\n  \"email\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}users",
+					"host": [
+						"{{base_url}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}products/category/women's clothing",
+					"host": [
+						"{{base_url}}products"
+					],
+					"path": [
+						"category",
+						"women's clothing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}users",
+					"host": [
+						"{{base_url}}users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
